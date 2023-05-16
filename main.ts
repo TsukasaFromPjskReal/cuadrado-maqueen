@@ -1,0 +1,21 @@
+let tiempo_giro = 900
+let tiempo = 2200
+basic.forever(function () {
+    maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+    basic.pause(tiempo)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 150)
+    maqueen.motorStop(maqueen.Motors.M1)
+    basic.pause(tiempo_giro)
+    maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+    basic.pause(tiempo)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 150)
+    maqueen.motorStop(maqueen.Motors.M1)
+    basic.pause(tiempo_giro)
+    maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+    basic.pause(tiempo)
+    maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 150)
+    maqueen.motorStop(maqueen.Motors.M1)
+    basic.pause(tiempo_giro)
+    maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 150)
+    basic.pause(tiempo)
+})
